@@ -1,0 +1,325 @@
+{
+  "artifact": {
+    "model_type": "SGDClassifier_log_loss",
+    "target": "Churn",
+    "positive_class": 1,
+    "threshold": 0.5,
+    "numeric_features": [
+      "SeniorCitizen",
+      "tenure",
+      "MonthlyCharges",
+      "TotalCharges"
+    ],
+    "numeric_imputer_medians": [
+      0.0,
+      29.0,
+      70.5,
+      1398.125
+    ],
+    "numeric_means": [
+      0.16329428470003549,
+      32.48509052183174,
+      64.92996095136671,
+      2301.3199503017395
+    ],
+    "numeric_scales": [
+      0.3696339558053876,
+      24.56656301538815,
+      30.135430576006627,
+      2277.606686938009
+    ],
+    "categorical_features": [
+      "gender",
+      "Partner",
+      "Dependents",
+      "PhoneService",
+      "MultipleLines",
+      "InternetService",
+      "OnlineSecurity",
+      "OnlineBackup",
+      "DeviceProtection",
+      "TechSupport",
+      "StreamingTV",
+      "StreamingMovies",
+      "Contract",
+      "PaperlessBilling",
+      "PaymentMethod"
+    ],
+    "categorical_imputer_values": [
+      "Male",
+      "No",
+      "No",
+      "Yes",
+      "No",
+      "Fiber optic",
+      "No",
+      "No",
+      "No",
+      "No",
+      "No",
+      "No",
+      "Month-to-month",
+      "Yes",
+      "Electronic check"
+    ],
+    "categories": [
+      [
+        "Female",
+        "Male"
+      ],
+      [
+        "No",
+        "Yes"
+      ],
+      [
+        "No",
+        "Yes"
+      ],
+      [
+        "No",
+        "Yes"
+      ],
+      [
+        "No",
+        "No phone service",
+        "Yes"
+      ],
+      [
+        "DSL",
+        "Fiber optic",
+        "No"
+      ],
+      [
+        "No",
+        "No internet service",
+        "Yes"
+      ],
+      [
+        "No",
+        "No internet service",
+        "Yes"
+      ],
+      [
+        "No",
+        "No internet service",
+        "Yes"
+      ],
+      [
+        "No",
+        "No internet service",
+        "Yes"
+      ],
+      [
+        "No",
+        "No internet service",
+        "Yes"
+      ],
+      [
+        "No",
+        "No internet service",
+        "Yes"
+      ],
+      [
+        "Month-to-month",
+        "One year",
+        "Two year"
+      ],
+      [
+        "No",
+        "Yes"
+      ],
+      [
+        "Bank transfer (automatic)",
+        "Credit card (automatic)",
+        "Electronic check",
+        "Mailed check"
+      ]
+    ],
+    "onehot_feature_names": [
+      "gender_Female",
+      "gender_Male",
+      "Partner_No",
+      "Partner_Yes",
+      "Dependents_No",
+      "Dependents_Yes",
+      "PhoneService_No",
+      "PhoneService_Yes",
+      "MultipleLines_No",
+      "MultipleLines_No phone service",
+      "MultipleLines_Yes",
+      "InternetService_DSL",
+      "InternetService_Fiber optic",
+      "InternetService_No",
+      "OnlineSecurity_No",
+      "OnlineSecurity_No internet service",
+      "OnlineSecurity_Yes",
+      "OnlineBackup_No",
+      "OnlineBackup_No internet service",
+      "OnlineBackup_Yes",
+      "DeviceProtection_No",
+      "DeviceProtection_No internet service",
+      "DeviceProtection_Yes",
+      "TechSupport_No",
+      "TechSupport_No internet service",
+      "TechSupport_Yes",
+      "StreamingTV_No",
+      "StreamingTV_No internet service",
+      "StreamingTV_Yes",
+      "StreamingMovies_No",
+      "StreamingMovies_No internet service",
+      "StreamingMovies_Yes",
+      "Contract_Month-to-month",
+      "Contract_One year",
+      "Contract_Two year",
+      "PaperlessBilling_No",
+      "PaperlessBilling_Yes",
+      "PaymentMethod_Bank transfer (automatic)",
+      "PaymentMethod_Credit card (automatic)",
+      "PaymentMethod_Electronic check",
+      "PaymentMethod_Mailed check"
+    ],
+    "final_feature_names": [
+      "SeniorCitizen",
+      "tenure",
+      "MonthlyCharges",
+      "TotalCharges",
+      "gender_Female",
+      "gender_Male",
+      "Partner_No",
+      "Partner_Yes",
+      "Dependents_No",
+      "Dependents_Yes",
+      "PhoneService_No",
+      "PhoneService_Yes",
+      "MultipleLines_No",
+      "MultipleLines_No phone service",
+      "MultipleLines_Yes",
+      "InternetService_DSL",
+      "InternetService_Fiber optic",
+      "InternetService_No",
+      "OnlineSecurity_No",
+      "OnlineSecurity_No internet service",
+      "OnlineSecurity_Yes",
+      "OnlineBackup_No",
+      "OnlineBackup_No internet service",
+      "OnlineBackup_Yes",
+      "DeviceProtection_No",
+      "DeviceProtection_No internet service",
+      "DeviceProtection_Yes",
+      "TechSupport_No",
+      "TechSupport_No internet service",
+      "TechSupport_Yes",
+      "StreamingTV_No",
+      "StreamingTV_No internet service",
+      "StreamingTV_Yes",
+      "StreamingMovies_No",
+      "StreamingMovies_No internet service",
+      "StreamingMovies_Yes",
+      "Contract_Month-to-month",
+      "Contract_One year",
+      "Contract_Two year",
+      "PaperlessBilling_No",
+      "PaperlessBilling_Yes",
+      "PaymentMethod_Bank transfer (automatic)",
+      "PaymentMethod_Credit card (automatic)",
+      "PaymentMethod_Electronic check",
+      "PaymentMethod_Mailed check"
+    ],
+    "coef": [
+      [
+        -0.012503126081901239,
+        -1.1524149114883033,
+        -1.2174141636234852,
+        0.5479559868449595,
+        0.3033183899500492,
+        0.2999255372137147,
+        0.36430709325683536,
+        0.23893683390693107,
+        0.4717569917162958,
+        0.13148693544746967,
+        0.1779004305876736,
+        0.42534349657608367,
+        -0.025157797688804603,
+        0.1779004305876736,
+        0.4505012942648915,
+        -0.637661197628866,
+        1.3525691539690377,
+        -0.1116640291764409,
+        0.46871752843456077,
+        -0.1116640291764409,
+        0.2461904279056467,
+        0.3410240544545512,
+        -0.1116640291764409,
+        0.373883901885648,
+        0.3395887567684693,
+        -0.1116640291764409,
+        0.3753191995717293,
+        0.5154383110244871,
+        -0.1116640291764409,
+        0.19946964531570588,
+        0.02533142891728259,
+        -0.1116640291764409,
+        0.6895765274229055,
+        0.12386040832893662,
+        -0.1116640291764409,
+        0.591047548011261,
+        1.009465266829756,
+        0.0951677487069847,
+        -0.5013890883729832,
+        0.1701962678991894,
+        0.4330476592645674,
+        0.03557936996107689,
+        0.07593395550200527,
+        0.32354548682013634,
+        0.16818511488053448
+      ]
+    ],
+    "intercept": [
+      -5.500851400670181
+    ]
+  },
+  "training_meta": {
+    "final_choice": "Gradient Boosting",
+    "final_choice_auc": 0.8433620088351547,
+    "best_sklearn": "Gradient Boosting",
+    "best_sklearn_auc": 0.8433620088351547,
+    "keras_auc": 0.8393913560153969,
+    "keras_acc": 0.794180269694819,
+    "sgd_auc": 0.8390684336975898,
+    "model_leaderboard": [
+      {
+        "name": "Gradient Boosting",
+        "type": "sklearn",
+        "auc": 0.8433620088351547,
+        "accuracy": 0.8062455642299503
+      },
+      {
+        "name": "Logistic Regression",
+        "type": "sklearn",
+        "auc": 0.8412978893797307,
+        "accuracy": 0.7381121362668559
+      },
+      {
+        "name": "SGD Classifier",
+        "type": "sklearn",
+        "auc": 0.8390684336975898,
+        "accuracy": 0.7530163236337828
+      },
+      {
+        "name": "Random Forest",
+        "type": "sklearn",
+        "auc": 0.8346831486217675,
+        "accuracy": 0.7842441447835344
+      },
+      {
+        "name": "keras_mlp",
+        "type": "keras",
+        "auc": 0.8393913560153969,
+        "accuracy": 0.794180269694819,
+        "grad_abs_mean": 0.0014169263886287808,
+        "grad_abs_max": 0.031073305755853653,
+        "grad_std": 0.0022233447525650263
+      }
+    ]
+  }
+}

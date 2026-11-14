@@ -1,0 +1,21 @@
+.DS_Store
+.idea/
+.vscode/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+*.zip
+*.h5
+*.keras
+
+# Local cloud credentials and runtime files
+.aws/
+deployment/package/
+tmp/
+
+# Third-party datasets are downloaded locally; see data/README.md
+data/*.csv
+
